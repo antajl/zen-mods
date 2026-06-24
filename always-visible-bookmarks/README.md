@@ -34,11 +34,22 @@ After installation and restart:
 
 ## How It Works
 
-This mod forces the bookmarks bar to be visible by:
-1. Setting `height: var(--zen-toolbar-height)` on the navbar container
-2. Setting `opacity: 1` on both the navbar container and PersonalToolbar
+This mod uses multiple CSS approaches to force the bookmarks bar to be visible:
+1. Setting `height` and `opacity` on the navbar container
+2. Setting `visibility`, `opacity`, and `display` on PersonalToolbar
+3. Preventing collapsing of the navbar container
+4. Ensuring the navigator toolbox is visible
 
-This overrides Zen's default hover-to-show behavior in Single Toolbar Layout while keeping all toolbar functionality intact.
+## Alternative Solution (about:config)
+
+If the CSS mod doesn't work, try this about:config solution:
+
+1. Type `about:config` in the address bar
+2. Search for `zen.view.hide-window-controls`
+3. Set it to `false`
+4. Restart the browser
+
+This is the official workaround mentioned in Zen Browser GitHub issues.
 
 ## Compatibility
 

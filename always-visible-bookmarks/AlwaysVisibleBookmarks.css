@@ -2,25 +2,40 @@
  * Always Visible Bookmarks Bar Mod for Zen Browser (Sine)
  * 
  * Makes the bookmarks bar always visible in Single Toolbar Layout
- * Overrides the default hover-to-show behavior
+ * Multiple approaches to override the default hover-to-show behavior
  * 
  * Author: antajl
- * Version: 4.0.0
+ * Version: 5.0.0
  */
 
 @namespace xul "http://www.mozilla.org/keymaster/gatekeeper/there.is.only.xul";
 
 /* ============================================
-   Force bookmarks bar to always be visible
+   Force bookmarks bar to always be visible - Multiple approaches
    ============================================ */
 
-/* Force the navbar container to have height and be visible */
+/* Approach 1: Force navbar container to have height and be visible */
 #zen-appcontent-navbar-container {
+  height: var(--zen-toolbar-height) !important;
+  opacity: 1 !important;
+  max-height: none !important;
+}
+
+/* Approach 2: Force the PersonalToolbar (bookmarks bar) to be visible */
+#PersonalToolbar {
+  opacity: 1 !important;
+  visibility: visible !important;
+  display: flex !important;
+}
+
+/* Approach 3: Prevent collapsing of the navbar container */
+#zen-appcontent-navbar-container[collapsed] {
   height: var(--zen-toolbar-height) !important;
   opacity: 1 !important;
 }
 
-/* Force the PersonalToolbar (bookmarks bar) to be visible */
-#PersonalToolbar {
+/* Approach 4: Ensure the toolbar is not hidden by any means */
+#navigator-toolbox {
+  visibility: visible !important;
   opacity: 1 !important;
 }
