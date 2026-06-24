@@ -1,10 +1,10 @@
 {
-  "id": "horizontal-pinned-tabs",
+  "id": "always-visible-pinned-tabs",
   "homepage": "https://github.com/antajl/zen-mods",
   "author": "antajl",
-  "name": "Horizontal Pinned Tabs",
-  "description": "Minimal mod that makes pinned tabs display horizontally without modifying browser layout. Safe and conservative approach.",
-  "version": "2.0.0",
+  "name": "Always Visible Pinned Tabs",
+  "description": "Disables hover-to-show behavior for pinned tabs bar in Compact Mode. Makes the pinned tabs always visible instead of hiding until hover.",
+  "version": "3.0.0",
   "createdAt": "2026-06-24",
   "updatedAt": "2026-06-24",
   "readme": "https://github.com/antajl/zen-mods/blob/main/horizontal-pinned-tabs/README.md",
@@ -14,7 +14,7 @@
   "tags": [
     "CSS",
     "Pinned Tabs",
-    "Minimal"
+    "Compact Mode"
   ],
   "fork": ["zen"]
 }

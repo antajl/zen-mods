@@ -1,47 +1,25 @@
 /*
- * Horizontal Pinned Tabs Mod for Zen Browser (Sine) - Conservative Version
+ * Always Visible Pinned Tabs Mod for Zen Browser (Sine)
  * 
- * MINIMAL CHANGES: Only styles pinned tabs to display horizontally
- * Does NOT modify global browser layout or structure
+ * Disables hover-to-show behavior for pinned tabs/toolbar in Compact Mode
+ * Makes the pinned tabs bar always visible instead of hiding until hover
  * 
  * Author: antajl
- * Version: 2.0.0 (Safe/Conservative)
+ * Version: 3.0.0
  */
 
 @namespace xul "http://www.mozilla.org/keymaster/gatekeeper/there.is.only.xul";
 
 /* ============================================
-   ONLY: Make pinned tabs display horizontally
+   Disable hover-to-show behavior for toolbar/pinned tabs
    ============================================ */
 
-/* Target the pinned tabs container and make it horizontal */
-.tabbrowser-tab[pinned],
-.tabbrowser-tab[essential] {
-  display: inline-flex !important;
-  flex-direction: row !important;
-  writing-mode: horizontal-tb !important;
+/* This prevents the toolbox from responding to hover at the edge of the browser */
+#navigator-toolbox {
+  pointer-events: none !important;
 }
 
-/* Ensure pinned tabs container allows horizontal layout */
-#tabbrowser-tabs[pinnedtabs] {
-  flex-direction: row !important;
-  flex-wrap: nowrap !important;
-  overflow-x: auto !important;
-  overflow-y: hidden !important;
-}
-
-/* ============================================
-   OPTIONAL: Hide tab labels for cleaner look
-   ============================================ */
-
-.tabbrowser-tab[pinned] .tab-label-container,
-.tabbrowser-tab[essential] .tab-label-container {
-  display: none !important;
-}
-
-/* Show labels on hover */
-.tabbrowser-tab[pinned]:hover .tab-label-container,
-.tabbrowser-tab[essential]:hover .tab-label-container {
-  display: flex !important;
-  margin-left: 6px !important;
+/* Re-enable pointer events for all child elements so they remain functional */
+#navigator-toolbox > * {
+  pointer-events: all !important;
 }

@@ -1,13 +1,13 @@
-# Horizontal Pinned Tabs
+# Always Visible Pinned Tabs
 
-A minimal Sine mod for Zen Browser that makes pinned tabs display horizontally.
+A Sine mod for Zen Browser that makes the pinned tabs bar always visible in Compact Mode.
 
 ## Features
 
-- **Horizontal Pinned Tabs** — Pinned tabs display horizontally instead of vertically
-- **Minimal Changes** — Only styles pinned tabs, does not modify browser layout
-- **Safe Approach** — Conservative CSS that won't break browser functionality
-- **Clean Look** — Tab labels hidden by default, shown on hover
+- **Always Visible** — Pinned tabs bar stays visible instead of hiding until hover
+- **Compact Mode Fix** — Disables the hover-to-show behavior in Compact Mode
+- **Minimal Changes** — Only 2 CSS rules, safe and conservative approach
+- **No Layout Breaks** — Does not modify browser structure or layout
 
 ## Installation
 
@@ -28,16 +28,17 @@ You must have [Sine](https://github.com/CosmoCreeper/Sine) installed to use this
 
 After installation and restart:
 
-1. Pin some tabs (right-click → Pin Tab)
-2. Or add tabs to Essentials (right-click → Add to Essentials)
-3. Pinned tabs will now display horizontally in the sidebar
+1. Enable Compact Mode in Zen Browser settings (if not already enabled)
+2. The pinned tabs bar will now stay visible at all times
+3. No need to hover at the edge of the browser to show it
 
-## Behavior
+## How It Works
 
-- Tab labels are hidden by default for a cleaner look
-- Labels appear on hover
-- No fullscreen modifications
-- No layout restructuring
+This mod disables the hover-to-show behavior by:
+1. Setting `pointer-events: none` on the toolbox container
+2. Re-enabling `pointer-events: all` on all child elements
+
+This prevents the browser from detecting hover at the edge of the window while keeping all toolbar functionality intact.
 
 ## Compatibility
 
