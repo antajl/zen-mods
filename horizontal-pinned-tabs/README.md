@@ -1,13 +1,13 @@
 # Horizontal Pinned Tabs
 
-A Sine mod for Zen Browser that reorganizes the interface with a horizontal pinned tabs bar.
+A minimal Sine mod for Zen Browser that makes pinned tabs display horizontally.
 
 ## Features
 
-- **Horizontal Pinned Tabs Bar** — Fixed bar at the top of the window spanning full width
-- **Vertical Sidebar** — Left side below the pinned tabs bar
-- **Main Content Area** — Right side with no overlap with other elements
-- **Clean Layout** — CSS Grid-based layout for precise positioning
+- **Horizontal Pinned Tabs** — Pinned tabs display horizontally instead of vertically
+- **Minimal Changes** — Only styles pinned tabs, does not modify browser layout
+- **Safe Approach** — Conservative CSS that won't break browser functionality
+- **Clean Look** — Tab labels hidden by default, shown on hover
 
 ## Installation
 
@@ -30,29 +30,14 @@ After installation and restart:
 
 1. Pin some tabs (right-click → Pin Tab)
 2. Or add tabs to Essentials (right-click → Add to Essentials)
-3. You'll see the horizontal bar at the top with pinned tabs
-4. Vertical sidebar with regular tabs will be on the left
-5. Main content will be on the right
-
-## Customization
-
-You can customize the mod by editing the CSS variables at the top of `HorizontalPinnedTabs.css`:
-
-```css
-:root {
-  --zen-pinned-bar-height: 40px;      /* Height of pinned bar */
-  --zen-sidebar-width: 250px;         /* Width of sidebar */
-  --zen-pinned-bar-bg: var(--toolbar-bgcolor, #2b2a33);  /* Background color */
-  --zen-pinned-bar-border: var(--chrome-content-separator-color, #52525e);  /* Border color */
-}
-```
+3. Pinned tabs will now display horizontally in the sidebar
 
 ## Behavior
 
 - Tab labels are hidden by default for a cleaner look
 - Labels appear on hover
-- In fullscreen mode (F11), the pinned bar is automatically hidden
-- Scrollbars are styled for consistency
+- No fullscreen modifications
+- No layout restructuring
 
 ## Compatibility
 
