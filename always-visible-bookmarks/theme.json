@@ -1,0 +1,20 @@
+{
+  "id": "always-visible-bookmarks",
+  "homepage": "https://github.com/antajl/zen-mods",
+  "author": "antajl",
+  "name": "Always Visible Bookmarks Bar",
+  "description": "Disables hover-to-show behavior for bookmarks bar in Compact Mode. Makes the bookmarks bar always visible instead of hiding until hover.",
+  "version": "3.0.0",
+  "createdAt": "2026-06-24",
+  "updatedAt": "2026-06-24",
+  "readme": "https://github.com/antajl/zen-mods/blob/main/always-visible-bookmarks/README.md",
+  "style": {
+    "chrome": "AlwaysVisibleBookmarks.css"
+  },
+  "tags": [
+    "CSS",
+    "Bookmarks",
+    "Compact Mode"
+  ],
+  "fork": ["zen"]
+}

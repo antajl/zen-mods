@@ -1,10 +1,10 @@
-# Always Visible Pinned Tabs
+# Always Visible Bookmarks Bar
 
-A Sine mod for Zen Browser that makes the pinned tabs bar always visible in Compact Mode.
+A Sine mod for Zen Browser that makes the bookmarks bar always visible in Compact Mode.
 
 ## Features
 
-- **Always Visible** — Pinned tabs bar stays visible instead of hiding until hover
+- **Always Visible** — Bookmarks bar stays visible instead of hiding until hover
 - **Compact Mode Fix** — Disables the hover-to-show behavior in Compact Mode
 - **Minimal Changes** — Only 2 CSS rules, safe and conservative approach
 - **No Layout Breaks** — Does not modify browser structure or layout
@@ -29,7 +29,7 @@ You must have [Sine](https://github.com/CosmoCreeper/Sine) installed to use this
 After installation and restart:
 
 1. Enable Compact Mode in Zen Browser settings (if not already enabled)
-2. The pinned tabs bar will now stay visible at all times
+2. The bookmarks bar will now stay visible at all times
 3. No need to hover at the edge of the browser to show it
 
 ## How It Works

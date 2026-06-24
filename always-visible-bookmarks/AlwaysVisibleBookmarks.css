@@ -1,8 +1,8 @@
 /*
- * Always Visible Pinned Tabs Mod for Zen Browser (Sine)
+ * Always Visible Bookmarks Bar Mod for Zen Browser (Sine)
  * 
- * Disables hover-to-show behavior for pinned tabs/toolbar in Compact Mode
- * Makes the pinned tabs bar always visible instead of hiding until hover
+ * Disables hover-to-show behavior for bookmarks bar in Compact Mode
+ * Makes the bookmarks bar always visible instead of hiding until hover
  * 
  * Author: antajl
  * Version: 3.0.0
@@ -11,7 +11,7 @@
 @namespace xul "http://www.mozilla.org/keymaster/gatekeeper/there.is.only.xul";
 
 /* ============================================
-   Disable hover-to-show behavior for toolbar/pinned tabs
+   Disable hover-to-show behavior for toolbar/bookmarks bar
    ============================================ */
 
 /* This prevents the toolbox from responding to hover at the edge of the browser */

@@ -25,17 +25,17 @@ This repository contains various mods for Zen Browser that can be installed via 
 
 ## Available Mods
 
-### Horizontal Pinned Tabs
+### Always Visible Bookmarks Bar
 
-Reorganizes Zen Browser interface with a horizontal pinned tabs bar at the top, vertical sidebar on the left, and main content on the right.
+Disables hover-to-show behavior for bookmarks bar in Compact Mode. Makes the bookmarks bar always visible instead of hiding until hover.
 
 **Features:**
-- Fixed horizontal bar for pinned/essential tabs
-- Vertical sidebar for regular tabs
-- No overlap between interface elements
-- Customizable via CSS variables
+- Always visible bookmarks bar
+- Compact Mode fix
+- Minimal CSS changes
+- No layout modifications
 
-See [horizontal-pinned-tabs/](horizontal-pinned-tabs/) for details.
+See [always-visible-bookmarks/](always-visible-bookmarks/) for details.
 
 ## Contributing
 
