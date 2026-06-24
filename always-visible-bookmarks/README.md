@@ -1,11 +1,11 @@
 # Always Visible Bookmarks Bar
 
-A Sine mod for Zen Browser that makes the bookmarks bar always visible in Compact Mode.
+A Sine mod for Zen Browser that makes the bookmarks bar always visible in Single Toolbar Layout.
 
 ## Features
 
 - **Always Visible** — Bookmarks bar stays visible instead of hiding until hover
-- **Compact Mode Fix** — Disables the hover-to-show behavior in Compact Mode
+- **Single Toolbar Layout** — Works with Zen's default Single Toolbar layout
 - **Minimal Changes** — Only 2 CSS rules, safe and conservative approach
 - **No Layout Breaks** — Does not modify browser structure or layout
 
@@ -28,17 +28,17 @@ You must have [Sine](https://github.com/CosmoCreeper/Sine) installed to use this
 
 After installation and restart:
 
-1. Enable Compact Mode in Zen Browser settings (if not already enabled)
+1. Make sure you're using Single Toolbar Layout (Zen's default)
 2. The bookmarks bar will now stay visible at all times
 3. No need to hover at the edge of the browser to show it
 
 ## How It Works
 
-This mod disables the hover-to-show behavior by:
-1. Setting `pointer-events: none` on the toolbox container
-2. Re-enabling `pointer-events: all` on all child elements
+This mod forces the bookmarks bar to be visible by:
+1. Setting `height: var(--zen-toolbar-height)` on the navbar container
+2. Setting `opacity: 1` on both the navbar container and PersonalToolbar
 
-This prevents the browser from detecting hover at the edge of the window while keeping all toolbar functionality intact.
+This overrides Zen's default hover-to-show behavior in Single Toolbar Layout while keeping all toolbar functionality intact.
 
 ## Compatibility
 

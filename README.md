@@ -27,11 +27,11 @@ This repository contains various mods for Zen Browser that can be installed via 
 
 ### Always Visible Bookmarks Bar
 
-Disables hover-to-show behavior for bookmarks bar in Compact Mode. Makes the bookmarks bar always visible instead of hiding until hover.
+Makes the bookmarks bar always visible in Single Toolbar Layout. Overrides the default hover-to-show behavior.
 
 **Features:**
 - Always visible bookmarks bar
-- Compact Mode fix
+- Single Toolbar Layout support
 - Minimal CSS changes
 - No layout modifications
 
