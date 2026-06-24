@@ -1,0 +1,20 @@
+{
+  "id": "horizontal-pinned-tabs",
+  "homepage": "https://github.com/antajl/zen-mods",
+  "author": "antajl",
+  "name": "Horizontal Pinned Tabs",
+  "description": "Reorganizes Zen Browser interface with a horizontal pinned tabs bar at the top, vertical sidebar on the left, and main content on the right. No overlap between elements.",
+  "version": "1.0.0",
+  "createdAt": "2026-06-24",
+  "updatedAt": "2026-06-24",
+  "readme": "https://github.com/antajl/zen-mods/blob/main/horizontal-pinned-tabs/README.md",
+  "style": {
+    "chrome": "HorizontalPinnedTabs.css"
+  },
+  "tags": [
+    "CSS",
+    "Layout",
+    "UI"
+  ],
+  "fork": ["zen"]
+}
